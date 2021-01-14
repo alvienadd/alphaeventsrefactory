@@ -1,13 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View,ImageBackground } from 'react-native'
+import { StyleSheet, Text, View,ImageBackground,TouchableOpacity} from 'react-native'
 import {BgColor} from '../../../assets' 
 
-const Button = (props) => {
+const Button = ({title,onPress}) => {
     return (
         <View style={styles.container}>
-            <ImageBackground source={BgColor} style={styles.image}>
-                <Text style={styles.title}>{props.title}</Text>
-            </ImageBackground>
+            <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
+                <ImageBackground source={BgColor} style={styles.image}>
+                        <Text style={styles.title}>{title}</Text>
+                </ImageBackground>
+            </TouchableOpacity>
         </View>
     )
 }

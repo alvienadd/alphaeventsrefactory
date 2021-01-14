@@ -4,7 +4,7 @@ import { ImageBackground, StyleSheet, Text, View,Image,ScrollView} from 'react-n
 import {BackgroundImages,Logo} from '../../assets'
 import {Button,Header,TextInput,Gap,Google} from '../../components'
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
     return (
         <View style={styles.container}>
            
@@ -18,8 +18,7 @@ const SignIn = () => {
                     <Gap height={14}/>
                     <TextInput style={styles.textinput} placeholder="password"/>
                     <Gap height={14}/>
-                    <Button title="Login"/>
-                    
+                    <Button title="Login" onPress={()=>navigation.navigate('Order')}/>
                 </View>
                 <Gap height={14}/>
                     <Text style={{color:'#BB163A',textAlign:'center',fontFamily:'Helvetica'}}>Forgot Password ?</Text>
