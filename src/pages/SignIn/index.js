@@ -18,7 +18,7 @@ const SignIn = ({navigation}) => {
                     <Gap height={14}/>
                     <TextInput style={styles.textinput} placeholder="password"/>
                     <Gap height={14}/>
-                    <Button title="Login" onPress={()=>navigation.navigate('Order')}/>
+                    <Button title="Login" onPress={()=>navigation.navigate('MainApp')}/>
                 </View>
                 <Gap height={14}/>
                     <Text style={{color:'#BB163A',textAlign:'center',fontFamily:'Helvetica'}}>Forgot Password ?</Text>

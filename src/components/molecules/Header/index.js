@@ -2,11 +2,11 @@ import React from 'react'
 import { StyleSheet, Text, View,ImageBackground} from 'react-native'
 import {HeaderImages} from '../../../assets' 
 
-const Header = ({title}) => {
+const Header = ({title,height=50,pdingTop=10}) => {
     return (
         <View style={styles.container}>
-             <ImageBackground source={HeaderImages} style={styles.image}>
-                <Text style={styles.title}>{title}</Text>
+             <ImageBackground source={HeaderImages} style={styles.image(height)}>
+                <Text style={styles.title(pdingTop)}>{title}</Text>
              </ImageBackground>
         </View>
     )
@@ -18,19 +18,18 @@ const styles = StyleSheet.create({
     container:{
         width:'100%',
         height:50,
-        flex:1
     },
-    title:{
+    title:(pdingTop)=>({
         fontSize:22,
         fontFamily:'Poppins-Medium',
         color:'#FFFFFF',
         paddingHorizontal:40,
-        paddingTop:10
-    },  
-    image:{
+        paddingTop:pdingTop
+    }),  
+    image:(height)=>({
         width:'120%',
-        height:50,
+        height:height,
         flex:1,
         marginHorizontal:-20
-    }
+    })
 })

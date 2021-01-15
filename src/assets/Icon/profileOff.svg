@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="35" viewBox="0 0 52 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="19.115" height="19.115" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_213" data-name="Group 213" transform="translate(-275 -719)">
+    <text id="My_account" data-name="My account" transform="translate(275 751)" fill="#676767" font-size="10" font-family="ArialMT, Arial"><tspan x="0" y="0">My account</tspan></text>
+    <g id="Profile" transform="translate(292 719)" clip-path="url(#clip-path)">
+      <path id="Union_1" data-name="Union 1" d="M0,373.114v-2.389c0-2.629,4.3-4.779,9.557-4.779s9.557,2.15,9.557,4.779v2.389Zm4.778-14.335a4.779,4.779,0,1,1,4.779,4.778A4.779,4.779,0,0,1,4.778,358.779Z" transform="translate(0 -354)" fill="none" stroke="#6f6f6f" stroke-width="1" opacity="0.744"/>
+    </g>
+  </g>
+</svg>
