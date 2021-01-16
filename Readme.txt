@@ -5,3 +5,5 @@ Eksekusi:
 Letak Folder APK release berada di 
 +Folder APK
 +File app-release.apk
+
+Folder Revision file Adobe XD yang sudah dibetulkan
