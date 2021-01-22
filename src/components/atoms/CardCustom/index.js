@@ -28,18 +28,19 @@ const CardCustom = ({nopesanan='F-156855991',name='Jhony',quantity='4 Person',ti
                     </View>
                 </View>
             </View>
-            <View style={{flexDirection:'row',width:'90%',height:'26%',backgroundColor:'white',borderColor:'grey',borderWidth:1,marginHorizontal:14,marginVertical:10}}>
-                <View style={{width:'33.33%',height:'100%',backgroundColor:'white',borderColor:'grey',borderWidth:1,justifyContent:'center',alignItems:'center'}}>
+            <View style={{flexDirection:'row',width:'90%',height:'26%',backgroundColor:'white',borderColor:'white',borderWidth:1,marginHorizontal:14,marginVertical:10}}>
+                <View style={{width:'33.33%',height:'100%',backgroundColor:'#C91130',borderColor:'white',borderWidth:1,justifyContent:'center',alignItems:'center'}}>
                     <Image source={Decline}/>
-                    <Text style={{fontSize:12,fontFamily:'Helvetica'}}>Decline</Text>
+                    <Text style={{fontSize:12,fontFamily:'Helvetica',color:'white'}}>Accept</Text>
+           
                 </View>
-                <View style={{width:'33.33%',height:'100%',backgroundColor:'white',borderColor:'grey',borderWidth:1,justifyContent:'center',alignItems:'center'}}>
+                <View style={{width:'33.33%',height:'100%',backgroundColor:'#C91130',borderColor:'white',borderWidth:1,justifyContent:'center',alignItems:'center'}}>
                     <Image source={Chat}/>
-                    <Text style={{fontSize:12,fontFamily:'Helvetica'}}>Chat</Text>
+                    <Text style={{fontSize:12,fontFamily:'Helvetica',color:'white'}}>Chat</Text>
                 </View>
-                <View style={{width:'33.34%',height:'100%',backgroundColor:'white',borderColor:'grey',borderWidth:1,justifyContent:'center',alignItems:'center'}}>
+                <View style={{width:'33.34%',height:'100%',backgroundColor:'#C91130',borderColor:'white',borderWidth:1,justifyContent:'center',alignItems:'center'}}>
                     <Image source={Accept}/>
-                    <Text style={{fontSize:12,fontFamily:'Helvetica'}}>Accept</Text>
+                    <Text style={{fontSize:12,fontFamily:'Helvetica',color:'white'}}>Decline</Text>
                 </View>
 
             </View>

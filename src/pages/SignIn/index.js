@@ -3,6 +3,9 @@ import { ImageBackground, StyleSheet, Text, View,Image,ScrollView} from 'react-n
 
 import {BackgroundImages,Logo} from '../../assets'
 import {Button,Header,TextInput,Gap,Google} from '../../components'
+import {BgColor} from '../../assets' 
+
+
 
 const SignIn = ({navigation}) => {
     return (
@@ -27,11 +30,15 @@ const SignIn = ({navigation}) => {
                   {/* <Button title="Sign UP"/> */}
                   <Text style={{textAlign:'center'}}>OR</Text>
                   <Google/>
-                  <Gap height={50}/>
+                  <Gap height={20}/>
+                  <View style={{    width:'80%',height:'80%',paddingHorizontal:2,}}>
+                  <ImageBackground source={BgColor} style={styles.imagebtn}>
                   <View style={{flexDirection:'row'}}>
-                    <Text style={{fontFamily:'Brown-Bold'}}>Don't Have Account ? </Text>
-                    <Text style={{color:'#BB163A',fontFamily:'Brown-Bold'}}>Sign Up Here</Text>
+                    <Text style={{fontFamily:'Brown-Bold',color:'#ffffff'}}>Don't Have Account ? </Text>
+                    <Text style={{color:'#ffffff',fontFamily:'Brown-Bold'}}>Sign Up Here</Text>
                   </View>
+                  </ImageBackground>
+                </View>
                 </View>
             </ScrollView>
             </ImageBackground>
@@ -70,4 +77,10 @@ const styles = StyleSheet.create({
         flexDirection:'column',
         alignItems:'center'
     },
+    imagebtn:{
+        width:'100%',
+        height:50,
+        justifyContent:'center',
+        alignItems:'center'
+    }
 })

@@ -7,7 +7,7 @@ const Button = ({title,onPress}) => {
         <View style={styles.container}>
             <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
                 <ImageBackground source={BgColor} style={styles.image}>
-                        <Text style={styles.title}>{title}</Text>
+                    <Text style={styles.title}>{title}</Text>
                 </ImageBackground>
             </TouchableOpacity>
         </View>
